@@ -1,5 +1,5 @@
-FROM debian:wheezy
-RUN echo "deb http://http.debian.net/debian wheezy-backports main" >> /etc/apt/sources.list
+FROM resin/armv7hf-supervisor
+# RUN echo "deb http://http.debian.net/debian wheezy-backports main" >> /etc/apt/sources.list
 RUN apt-get update && apt-get -y upgrade
 RUN apt-get -y install build-essential
 RUN apt-get -y install git
